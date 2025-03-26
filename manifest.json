@@ -1,0 +1,33 @@
+{
+    "manifest_version": 3,
+    "name": "BOYKOT",
+    "version": "1.0",
+    "description": "Boykot Listesinde olan sitelere giriş yapmanızı engeller.",
+    "action": {
+        "default_popup": "popup.html",
+        "default_icon": {
+            "16": "images/boykot-16.png",
+            "48": "images/boykot-48.png",
+            "128": "images/boykot-128.png"
+        }
+    },
+    "permissions": [
+        "activeTab",
+        "storage",
+        "alarms"
+    ],
+    "background": {
+        "service_worker": "background.js"
+    },
+    "options_page": "options.html",
+    "web_accessible_resources": [
+        {
+            "resources": [
+                "images/warning.svg"
+            ],
+            "matches": [
+                "<all_urls>"
+            ]
+        }
+    ]
+}

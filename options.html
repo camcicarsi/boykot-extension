@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Uyarı Veren URL Eklentisi Ayarları</title>
+  </head>
+  <body>
+    <h1>Uyarı Veren URL Eklentisi Ayarları</h1>
+
+    <h2>JSON URL'sini Ayarla</h2>
+    <label for="jsonUrlInput">JSON URL:</label>
+    <input type="text" id="jsonUrlInput" /><br /><br />
+    <button id="saveJsonUrl">Kaydet</button>
+    <p id="jsonUrlStatus"></p>
+
+    <h2>Yeni URL Ekleme İsteği Gönder</h2>
+    <label for="newUrl">URL:</label>
+    <input type="text" id="newUrl" /><br /><br />
+    <button id="submitUrl">Gönder</button>
+    <p id="submissionStatus"></p>
+
+    <h2>Yasaklı URL'ler (Güncel Kaynak):</h2>
+    <ul id="blockedUrlList"></ul>
+
+    <script src="options.js"></script>
+  </body>
+</html>

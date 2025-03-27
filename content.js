@@ -1,7 +1,8 @@
-const warningImageUrl = chrome.runtime.getURL("images/warning.png");
-
+const warningImageUrl = chrome.runtime.getURL("images/warning.svg");
+console.log("warningImageUrl", warningImageUrl);
 // Uyarı div'ini oluştur
 const warningDiv = document.createElement("div");
+warningDiv.id = "extension-warning";
 warningDiv.style.backgroundColor = "#fde047";
 warningDiv.style.color = "#212121";
 warningDiv.style.padding = "10px";
